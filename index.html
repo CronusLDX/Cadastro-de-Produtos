@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <form id="Formulario">
+            <label for="produtoNome">Nome do produto: </label>
+            <input type="text" id="produtoNome" required> <br>
+            <label for="produtoDescricao">Descrição do produto:</label>
+            <textarea name="" id="produtoDescricao" cols="40" rows="5"></textarea>
+            <label for="produtoValor">Valor do produto: </label>
+            <input type="text" id="produtoValor" required>
+            <label for="produtoDisponivel"> Produto Disponível:</label>
+            <select  id="produtoDisponivel">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+            <button type="button" id="button">Cadastrar produto</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="produtoLista"></tbody>
+        </table>
+    </section>
+</body>
+</html>
